@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kacper Wójcik 4i"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Daleki zachód</title>
+</head>
+<body onload="zmienTlo()">
+    <header>
+        <div class="logo">
+            <img src="img/ecotropical-travels-unscreen.gif" id="logo" alt="baner"> 
+        </div>
+        <div id="gora">
+            <h2><span id="fajnynapis">Biuro podróży "RAJ"</span></h2>
+        </div>
+        <input type="checkbox" id="navi-toggle" class="checkbox" />
+        <label for="navi-toggle" class="button">
+        <span class="icon">&nbsp;</span>
+        </label>
+        <div class="background">&nbsp;</div>
+            <nav class="nav">
+                <ul class="list">
+                    <li class="item"> <a class="link" href="index.html">GŁÓWNA</a></li>
+                    <li class="item"> <a class="link" href="oferty.html">OFERTY</a></li>
+                    <li class="item"> <a class="link" href="galeria.html">GALERIA</a></li>
+                    <li class="item"> <a class="link" href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </nav>
+     </header>
+    
+    <main>
+        <section id="home">
+            <div id="info_kon">
+                <h2>Witaj w Biurze Podróży <span id="fajnynapis">"RAJ"</span></h2>
+                <p id="info_p">Skontaktuj się z nami</p>
+                <br>
+            </div>
+        </section>
+        <br>
+    <section id="kontakt">
+            <div class="col-right">
+                  <div class="container_form">
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="name">Imię:</label><br>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="nazwisko">Nazwisko:</label><br>
+                            <input type="text" id="nazwisko" name="nazwisko" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="telefon">Telefon:</label><br>
+                            <input type="text" id="telefon" name="nrtelefonu" placeholder="+XX YYY-YYY-YYY" pattern="+[0-9]{2} [0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="data">Data:</label>
+                            <input type="date" id="data" name="data">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="comments">Komentarze:</label>
+                            <textarea id="comments" name="comments" rows="4"></textarea>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <button type="submit">Wyślij</button>
+                            <button type="reset">Reset</button>
+                            <br>
+                            <br>
+                            <a href="login.php">Wersja developerska</a>
+                        </div>
+                    </form>
+                </div>
+              </div>
+        </section>
+        <div class="maps">
+            <h2>TUTAJ NAS ZNAJDZIESZ :)</h2>
+            <iframe width="900" height="650" style="border:0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10525.731543754922!2d19.853762631946726!3d50.15138988133692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716579e8c0bc1f7%3A0xfd2299255216dfbb!2sWeso%C5%82a%2012%2F3%2C%2032-089%20Szyce!5e0!3m2!1spl!2spl!4v1701932460773!5m2!1spl!2spl" ></iframe>
+            <br>
+            <h2>Adres do korespondencji:<br>
+              Biuro podróży "RAJ" Sp. z o.o. <br>
+              ul. Wesoła 12/3, 32-089 Szyce</h2>
+        </div>
+    </main>
+    <section id="footer">
+        <div class="footer container">
+          <div class="social-icon">
+            <div class="social-item">
+              <a href="https://www.facebook.com/"><img src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="facebook-new"/></a>
+            </div>
+            <div class="social-item">
+              <a href="https://www.instagram.com/"><img src="https://img.icons8.com/ios-filled/50/instagram-new--v1.png" alt="instagram-new--v1"/></a>
+            </div>
+            <div class="social-item">
+              <a href="https://twitter.com/?lang=pl"><img src="https://img.icons8.com/ios-filled/50/twitter.png" alt="twitter"/></a>
+            </div>
+            <div class="social-item">
+              <a href="https://www.youtube.com/"><img src="https://img.icons8.com/ios-filled/50/youtube-play.png" alt="youtube-play"/></a>
+            </div>
+          </div>
+          <p style="font-size: 20px; margin-bottom: 10px;">Copyright &copy; Kacper Wójcik</p>
+          <p>LOKALNA DATA i CZAS: <span id="czas1"></span>, <span id="czas2"></span></p>
+        </div>
+      </section>
+    
+    <script src="javascript/main.js"></script>
+    <script src="javascript/losowe.js"></script>
+    <script src="javascript/time.js"></script>
+    <script src="javascript/header.js"></script>
+    </body>
+    </html>
